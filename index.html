@@ -14307,8 +14307,8 @@ a.anchor-link {
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>A Central Processing Unit (CPU) is the heart of the computer that performs many processing functions for the system. CPUs are built by placing billions of microscopic transistors onto a single computer chip. Those transistors allow it to make the calculations it needs to run programs that are stored on your system’s memory. CPUs can also have multiple cores, which are recieve instructins and perform operations to satisy those instructions. One of the most common advancements of CPU technology is in making those transistors smaller and increasing the number of cores. This has resulted in the steady improvement to CPU speed over the decades, often referred to as Moore’s Law.</p>
-<p>The importance and value of advancing CPUs introduces great competition in the field of CPU development. In this project, we analyze the progression of CPU processing power in regards to its price to performance ration, whether it is above or below the expected number of transistors compared to the prediction of Moore's law, and the average marketshare of each competitor in relation to the strength of their products.</p>
+<p>A Central Processing Unit (CPU) is the heart of the computer that performs many processing functions for the system. CPUs are built by placing billions of microscopic transistors onto a single computer chip. Those transistors allow it to make the calculations it needs to run programs that are stored on your system’s memory. CPUs can also have multiple cores, which recieve instructions and perform operations to satisy those instructions. One of the most common advancements of CPU technology is in making those transistors smaller and increasing the number of cores. This has resulted in the steady improvement to CPU speed over the decades, often referred to as Moore’s Law.</p>
+<p>The importance and value of advancing CPUs introduces great competition in the field of CPU development. In this project, we analyze the progression of CPU processing power in regards to its price to performance ratio, whether it is above or below the expected performance compared to the prediction of Moore's law, and the average marketshare of each competitor in relation to the strength of their products.</p>
 
 </div>
 </div>
@@ -14319,7 +14319,8 @@ a.anchor-link {
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Using the requests library, we can get and create a dataframe to store the product deatails and information of each GPU. We created a dataframe with all the necessary columns and added the CPU data from Techpowerup.com to it. We parsed techpowerup.com using BeautifulSoup and further simplified the html by identifing and filtering the data from where it is stored in a table. This was done first for the year 2000 and then continued to the year 2023. We then cleaned up the table by getting rid of blank columns. Additionally, we had to include a 3 second sleep timer because the target website was giving us an error for too many requests if we didn't wait.</p>
+<p>Using the requests library, we can get and create a dataframe to store the product deatails and information of each CPU. We created a dataframe with all the necessary columns and added the CPU data from Techpowerup.com to it. We parsed techpowerup.com using BeautifulSoup and further simplified the html by identifing and filtering the data from where it is stored in a table. This was done first for the year 2000 and then continued to the year 2023. We then cleaned up the table by getting rid of blank columns. Additionally, we had to include a 5 second sleep timer because the target website was giving us an error for too many requests if we didn't wait.</p>
+<p>Source: <a href="https://www.techpowerup.com/cpu-specs/">https://www.techpowerup.com/cpu-specs/</a></p>
 
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
@@ -14377,7 +14378,7 @@ a.anchor-link {
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>The below cell just runs the function above to get all the data. We print our progress from 2001 to 2023 so we know how much we have loaded so far.</p>
+<p>The below cell just runs the function above to get all the data. We print our progress from 2000 to 2023 so we know how much we have loaded so far.</p>
 
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
@@ -14647,7 +14648,7 @@ a.anchor-link {
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>We then got performance data for each of the CPUs from CPUBenchmark.net. Once again, we created a datafraem with the columns we wanted and used BeautifulSoup to parse through the webpages HTML. Unforunately, the data was not in a table this time so we had to split up the unordered list it was in by line and remove any extra blank rows. We also used the chain module to flatten our data into a one-dimensional array.</p>
+<p>We then got performance data for each of the CPUs from CPUBenchmark.net. Once again, we created a dataframe with the columns we wanted and used BeautifulSoup to parse through the webpages HTML. Unforunately, the data was not in a table this time so we had to split up the unordered list it was in by line and remove any extra blank rows. We also used the chain module to flatten our data into a one-dimensional array. We then merged the two dataframes into one by using a library function that matched the names of one dataframe to the closesnt match in the other.</p>
 <p>Source for CPU performance data: <a href="https://www.cpubenchmark.net/">https://www.cpubenchmark.net/</a></p>
 
 </div>
@@ -15350,7 +15351,7 @@ a.anchor-link {
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>The violin plot gives us a much better representation of the increase in processing performance over time than a scatterplot. The body of the violin plots helps use see how many of the processors were really affected by advancements in increased transistors/cores and if these advancements were brought to a consumer level. For example, though the peak of the plot in 2013 was much higher than any previous year, those achievements were not widespread until 2019 when a bulk of the processors on the market could achieve the same performance.</p>
+<p>The violin plot gives us a much better representation of the increase in processing performance over time than a scatterplot. The body of the violin plots helps us see how many of the processors were really affected by advancements in increased transistors/cores and if these advancements were brought to a consumer level. For example, though the peak of the plot in 2013 was much higher than any previous year, those achievements were not widespread until 2019 when a bulk of the processors on the market could achieve the same performance.</p>
 
 </div>
 </div>
@@ -15454,7 +15455,7 @@ a.anchor-link {
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>We now look at the an actual funciton representation of the growth of CPU performance over time using our data. We used the polyfit function while using the log function on the y-values, the performance numbers, to get the accurate coefficients for our exponential regression. We now need to use some simple algebra to take Euler's number and raise it to the coeffcients. With this we get our exponential regression function which is estmiated to be closely related to the y=1.2^x function. This doesn't exactly match Moore's law function of doubling every two years, but it still has the exponetial performance growth that we want and expect to see.</p>
+<p>We now look at the actual function representation of the growth of CPU performance over time using our data. We used the polyfit function while using the log function on the y-values, the performance numbers, to get the accurate coefficients for our exponential regression. We now need to use some simple algebra to take Euler's number and raise it to the coeffcients. With this we get our exponential regression function which is estmiated to be closely related to the y=1.2^x function. This doesn't exactly match Moore's law function of doubling every two years, but it still has the exponetial performance growth that we want and expect to see.</p>
 
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
@@ -15584,6 +15585,12 @@ a.anchor-link {
 
 </div>
 
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Though the price of CPUs has been stagnant for the past two decades, the price to performance seems to be slightly increasing. This is beneficial for consumers overall, as the rate of processing power in CPUs has been increasing exponentially as we saw in our previous graph while the cost of manufacturing the computing power is improving as well.</p>
+
+</div>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
@@ -15952,13 +15959,19 @@ strong multicollinearity or other numerical problems.
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>After plotting the residuals of the actual performance minus the predicted value from our model, we can see that the residuals start to vary highly as time goes on. This is mostly due to the drastic performance increase due to competition between AMD and Intel and due to AMD's Ryzen CPUs release. To lower our residuals we would want to weigh the values from 2017 onwards more in our model so that it can have more accurate predicted performance numbers.</p>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h1 id="The-Takeaway">The Takeaway<a class="anchor-link" href="#The-Takeaway">&#182;</a></h1>
 </div>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>After analyzing the about CPU performance and cost over time we have learned quite a few things. The most important thing we have seen is that the performance of CPUs does have a somewhat exponetial growth that is closely related to Moore's Law. Although it doesn't exactly match Moores Law of doubling performance every two years(a function that is similar to y=2^x), we do get a closely matched function of y=1.2^x. Moore's law also states that the cost of compute power should be halved. From our analysis, we see that the cost and the cost to performance of processors have been relatively the same throughout time. This heavily is due to things such as inflation, but just by looking at the numbers this part of Moore's law doesn't seem to coincide with reality. Lastly, we have found that market competition, mainly between AMD and Intel, has a huge impact on the increase in performance for processors. As seen from our analysis, the increase in performance of processors saw exponetial growth after AMD came out with their new Ryzen series processors that was made to combat Intel who has controlled most of the CPU market during the past decade.</p>
-<p>Market competition is important for technological advancentment, so we hope to see more of that to get more powerful and more efficient processors in the future</p>
+<p>After analyzing the CPU performance and cost over time we have learned quite a few things. The most important thing we have seen is that the performance of CPUs does have a somewhat exponetial growth that is closely related to Moore's Law. Although it doesn't exactly match Moores Law of doubling performance every two years(a function that is similar to y=2^x), we do get a closely matched function of y=1.2^x. Moore's law also states that the cost of compute power should be halved. From our analysis, we see that the cost and the cost to performance of processors have been relatively the same throughout time. This heavily is due to things such as inflation, but just by looking at the numbers this part of Moore's law doesn't seem to coincide with reality. Lastly, we have found that market competition, mainly between AMD and Intel, has a huge impact on the increase in performance for processors. As seen from our analysis, the increase in performance of processors saw exponential growth after AMD came out with their new Ryzen series processors that was made to combat Intel who has controlled most of the CPU market during the past decade.</p>
+<p>Market competition is important for technological advancements, so we hope to see more of that to get more powerful and more efficient processors in the future.</p>
 
 </div>
 </div>
