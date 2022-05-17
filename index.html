@@ -14648,7 +14648,7 @@ a.anchor-link {
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>We then got performance data for each of the CPUs from CPUBenchmark.net. Once again, we created a dataframe with the columns we wanted and used BeautifulSoup to parse through the webpages HTML. Unforunately, the data was not in a table this time so we had to split up the unordered list it was in by line and remove any extra blank rows. We also used the chain module to flatten our data into a one-dimensional array. We then merged the two dataframes into one by using a library function that matched the names of one dataframe to the closesnt match in the other.</p>
+<p>We then got performance data for each of the CPUs from CPUBenchmark.net. These performance numbers are from benchmarks ran by CPUBenchmark that executes complex mathematical calcuations involving compression, encryption, and physics simulations. The higher the performance number the faster the CPU is. Once again, we created a dataframe with the columns we wanted and used BeautifulSoup to parse through the webpages HTML. Unforunately, the data was not in a table this time so we had to split up the unordered list it was in by line and remove any extra blank rows. We also used the chain module to flatten our data into a one-dimensional array. We then merged the two dataframes into one by using a library function that matched the names of one dataframe to the closesnt match in the other.</p>
 <p>Source for CPU performance data: <a href="https://www.cpubenchmark.net/">https://www.cpubenchmark.net/</a></p>
 
 </div>
@@ -15455,7 +15455,7 @@ a.anchor-link {
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>We now look at the actual function representation of the growth of CPU performance over time using our data. We used the polyfit function while using the log function on the y-values, the performance numbers, to get the accurate coefficients for our exponential regression. We now need to use some simple algebra to take Euler's number and raise it to the coeffcients. With this we get our exponential regression function which is estmiated to be closely related to the y=1.2^x function. This doesn't exactly match Moore's law function of doubling every two years, but it still has the exponetial performance growth that we want and expect to see.</p>
+<p>We now look at the actual function representation of the growth of CPU performance over time using our data. We used the polyfit function while using the log function on the y-values, the performance numbers, to get the accurate coefficients for our exponential regression. We now need to use some simple algebra to take Euler's number and raise it to the coeffcients. With this we get our exponential regression function which is estmiated to be closely related to the y=1.2^x function. This doesn't exactly match Moore's law function of doubling every two years, but it still has the exponetial performance growth that we want and expect to see. We can also now somewhat accurately predict how CPU performance is going to be in the near future with this function. CPU performance is going to be around 80000 when nearing 2030.</p>
 
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
